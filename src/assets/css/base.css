@@ -1,0 +1,529 @@
+/* Variables */
+:root {
+    --color-anchor: #af3b3d;
+    --color-gray-300: #e9e9e9;
+    --color-gray-400: #888;
+    --color-gray-500: #344054;
+    --color-black: #36373d;
+    --color-yellow-1: #fbf3e2;
+    --color-orange-1: #df983c;
+    --color-orange-2: #ac6509;
+    --color-primary-1: #a10000;
+    --color-white: #fff;
+    --color-rose: #c01048;
+    --color-rose-50: #fff1f3;
+    --color-rose-hover: #a11043;
+    --color-pink: #fff5f6;
+}
+
+/* Common CSS */
+.btn-common {
+    font-weight: 500;
+    padding: .5rem .75rem
+}
+
+.btn-common {
+    --tw-text-opacity: 1;
+    background-color: var(--color-rose);
+    border-radius: 8px;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    /* margin-top: 1rem; */
+    text-align: center
+}
+
+.btn-common:hover {
+    --tw-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+    background-color: var(--color-rose-hover);
+    box-shadow: 0 12px 16px -4px rgba(16,24,40,.1),0 4px 6px -2px rgba(16,24,40,.05)
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding-left: 5rem;
+        padding-right: 5rem
+    }
+}
+
+.image_background {
+    background-color: #FFFFFF;
+    background-image: url(https://cdn.eduadvisor.my/general/2022/11/homepage-cta-20221028-01.webp);
+    background-size: cover;
+    color: #FFFFFF
+}
+@media  only screen and (max-width: 768px) {
+    .image_background {
+        background-image: url(https://cdn.eduadvisor.my/general/2022/11/hompage-cta-m2.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.valid-check {
+    display: none;
+}
+
+/* Navbar CSS */
+.App_navbar {
+    height: 100%;
+}
+
+.App_navbar .App_logo {
+    transform: scale(.9)
+}
+
+.App_navbar .App_logo .App_nav-logo img {
+    max-width: 124px
+}
+
+.App_navbar .exo-menu>li {
+    /* display: inline-block; */
+    float: left
+}
+
+.App_navbar .exo-menu>li:not(.btn):not(.no-pad):not(.search_icon)>a {
+    display:block;
+    padding: 20px 2px;
+    margin-right: 9px
+}
+
+
+.App_navbar .exo-menu>li>a {
+    color: #667085;
+    text-decoration: none;
+}
+
+.App_nav-left .exo-menu>li>a {
+    font-size: 16px;
+}
+
+.App_navbar .exo-menu>li>a:hover,
+.App_help .App_help-text a:hover {
+    color: var(--color-rose-hover);
+}
+
+.App_navbar .exo-menu .btn-common {
+    color: #fff!important;
+    margin-top: auto!important
+}
+
+/* Banner CSS */
+.App_banner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    min-height: 80vh;
+    text-align: center
+}
+
+@media screen and (max-width: 767px){
+    .App_banner {
+        min-height: unset;
+        padding-bottom: 3.25rem;
+        padding-top: 3.25rem;
+    }
+}
+
+.App_banner .App_banner-text {
+    position: relative;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media(min-width: 768px) {
+    .App_banner .App_banner-text {
+        position: absolute;
+        padding-left:1rem;
+        padding-right: 1rem;
+        padding-bottom: 9%;
+        width: 100%
+    }
+
+    @media(min-width: 640px) {
+        .App_banner .App_banner-text {
+            max-width:640px;
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+    }
+
+    @media(min-width: 768px) {
+        .App_banner .App_banner-text {
+            max-width:768px
+        }
+    }
+
+    @media(min-width: 1024px) {
+        .App_banner .App_banner-text {
+            max-width:1024px;
+            padding-left: 4rem;
+            padding-right: 4rem
+        }
+    }
+}
+
+.App_banner .App_banner-menu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    right: 0
+}
+
+@media(min-width: 768px) {
+    .App_banner .App_banner-menu {
+        position:absolute;
+        bottom: 8%
+    }
+
+    .App_banner .App_banner-menu>:not([hidden])~:not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-left: calc(2.5rem*(1 - var(--tw-space-x-reverse)));
+        margin-right: calc(2.5rem*var(--tw-space-x-reverse))
+    }
+}
+
+.App_banner .App_banner-menu a:hover img {
+    transform: translateY(-5px)
+}
+
+.App_banner .App_banner-menu img {
+    height: 120px;
+    width: 120px
+}
+
+@media(min-width: 768px) {
+    .App_banner .App_banner-menu img {
+        height:150px;
+        width: 150px
+    }
+}
+
+.App_banner .App_banner-bg {
+    position: absolute;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    flex: none;
+    height: 100%;
+    width: 100%;
+    z-index: -1
+}
+
+/* Slider CSS */
+.App_slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 1
+}
+
+.App_slider .App_stage-outer {
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: translateZ(0)
+}
+
+.owl-height {
+    transition: height .5s ease-in-out;
+}
+
+.App_highlights-content .owl-height {
+    max-height: 26.5rem
+}
+
+.App_slider .App_stage {
+    display: flex;
+    position: relative;
+    width: 3800px;
+    touch-action: manipulation
+}
+
+.App_highlights-content .App_slider .App_stageItem {
+    width: 221.333px; 
+    margin-left: 20px
+}
+
+@media (min-width: 1024px) {
+    .App_highlights-content .App_slider .App_stageItem {
+        width: 360px
+    }
+}
+
+@media (max-width: 640px) {
+    .App_highlights-content .App_slider .App_stageItem {
+        width: 360px
+    }
+}
+
+.App_slider .App_stageItem img.owl-lazy {
+    transform-style: preserve-3d;
+}
+
+.App_slider .App_stageItem .owl-lazy {
+    opacity: 0;
+}
+
+.App_slider .App_stageItem img {
+    display: block;
+    width: 100%;
+}
+
+.App_slider .App_nav {
+    margin-top: 0;
+}
+
+.App_slider .App_dots {
+    margin-top: 10px;
+}
+
+.App_slider .App_nav,
+.App_slider .App_dots {
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+.App_slider .App_dots,
+.App_slider .App_nav .App_navNext,
+.App_slider .App_nav .App_navPrev {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.App_slider .App_nav button.App_navNext,
+.App_slider .App_nav button.App_navPrev,
+.App_slider .App_dot {
+    background: 0 0;
+    border: none;
+    color: inherit;
+    font: inherit;
+    padding: 0!important
+}
+
+.App_slider .App_navNext,
+.App_slider .App_navPrev {
+    display:none!important
+}
+
+@media(min-width: 768px) {
+    .App_slider .App_navNext,
+    .App_slider .App_navPrev {
+        display:flex!important
+    }
+}
+
+.App_highlights-content .App_slider .App_nav .App_navNext:hover,
+.App_highlights-content .App_slider .App_nav .App_navPrev:hover {
+    opacity: .4;
+}
+
+.App_navNext,
+.App_navPrev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)!important;
+    -webkit-transform: translateY(-50%)!important
+}
+
+.App_navNext {
+    right: 0
+}
+
+@media(min-width: 768px) {
+    .App_navNext {
+        margin-right:-3em!important
+    }
+}
+
+.App_navPrev {
+    left: 0
+}
+
+@media(min-width: 768px) {
+    .App_navPrev {
+        margin-left:-3em!important
+    }
+}
+
+.App_slider .App_nav button.App_navNext,
+.App_slider .App_nav button.App_navPrev {
+    background-color: var(--color-black);
+    border-radius: 9999px;
+    color: var(--color-white);
+    width: 40px;
+    height: 40px;
+    padding: 8px!important
+}
+
+
+.App_slider .App_dots .App_dot {
+    zoom: 1;
+    display: inline-block
+}
+
+.App_slider .App_dots .App_dot span {
+    display: block;
+    background: #d6d6d6;
+    border-radius: 30px;
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px
+}
+
+.App_slider .App_dots .App_dot span {
+    background-color: #ffe4e8
+}
+
+.App_slider .App_dots .App_dot.active span,
+.App_slider .App_dots .App_dot:hover span {
+    background-color: #e31b54
+}
+
+/* Help CSS */
+.App_help .App_help-text a {
+    color: var(--color-rose);
+}
+
+/* Benefits CSS */
+.App_benefits-content .App_benefits-item img {
+    height: 80px;
+    width: 80px;
+}
+
+/* Blogs CSS */
+.App_blogs-articles p.cat,
+.App_blogs-articles p.cat a {
+    color: #344054!important
+}
+
+.App_blogs-articles p.blog-title {
+    color: #101828;
+    font-size: 18px;
+    line-height: 1.35rem
+}
+
+.App_blogs-articles .lg-item .blog-title {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    margin-bottom: 14px
+}
+
+@media(min-width: 768px) {
+    .App_blogs-articles .lg-item .blog-title {
+        font-size: 1.625rem;
+        line-height: 2.35rem
+    }
+}
+
+.App_blogs-articles .lg-item>a:hover {
+    text-decoration: unset
+}
+
+.App_blogs-articles .sm-item .blog-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5rem
+}
+
+.App_blogs-articles .sm-item>a:hover {
+    text-decoration: unset
+}
+
+/* Google Review CSS */
+.google-review-bottom, .google-review-description {
+    padding: 1rem 1.2rem 0;
+    text-align: left;
+}
+
+.google-review-bottom p, .google-review-description p {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.google-review-bottom a, .google-review-description a {
+    color: var(--color-rose);
+    margin-bottom: unset;
+}
+
+.google_reviews .App_nav .App_navPrev {
+    opacity: .3
+}
+
+@media(min-width: 768px) {
+    .google_reviews .App_nav .App_navPrev {
+        left:65px;
+        position: absolute
+    }
+}
+
+.google_reviews .App_nav .App_navPrev:hover {
+    background-color: var(--color-black);
+    opacity: 1
+}
+
+.google_reviews .App_nav .App_navNext {
+    opacity: .3
+}
+
+@media(min-width: 768px) {
+    .google_reviews .App_nav .App_navNext {
+        position:absolute;
+        right: 65px
+    }
+}
+
+.google_reviews .App_nav .App_navNext:hover {
+    background-color: var(--color-black);
+    opacity: 1
+}
+
+/* Footer CSS */
+footer .App_nav-logo img {
+    max-width: 124px;
+}
