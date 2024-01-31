@@ -3,12 +3,770 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EduAdvisor: Compare, Plan and Apply For Tertiary Education in Malaysia</title>
     <link href="./output.css" rel="stylesheet">
+    <link href="./assets/css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline text-red-600">
-        Hello world!
-    </h1>
+<body class="antialiased" style="padding-top: 64px;">
+    <header class="shadow fixed left-0 right-0 top-0 bg-white z-10">
+        <nav class="mx-auto xxl:container">
+            <div class="App_navbar hidden md:flex justify-between px-7 xxl:px-0">
+                <div class="App_nav-left flex items-center space-x-5 flex-wrap">
+                    <div class="App_logo">
+                        <a href="#" class="App_nav-logo">
+                            <img src="https://cdn.eduadvisor.my/general/logo/2022-11-01/eduadvisor-logo-main-1667289740.webp" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="exo-menu">
+                        <li>
+                            <a href="#">
+                                Course Guides 
+                                <span><i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Compare Courses 
+                                <span><i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Search Scholarships 
+                                <span><i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Tools & Quizzes 
+                                <span><i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Articles 
+                                <span><i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Our Services
+                                <span><i class="fa-solid fa-chevron-down fa-xs"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="App_nav-right space-x-5 flex-wrap">
+                    <ul class="exo-menu flex items-center">
+                        <li class="search_icon" id="search_icon">
+                            <a href="#" class="text-gray-500 h-full mr-5"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li><a href="#">Login</a></li>
+                        <li class="no-pad"><a class="btn-common no-underline capitalize" href="#">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="App_main">
+        <div class="App_banner px-4 md:px-0">
+            <div class="App_banner-text">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-semibold">Make smart education decisions</h1>
+                    <p class="text-xl md:text-2xl mt-4 text-gray-800">Compare and apply for the best course and university.</p>
+                </div>
+            </div>
+            <div class="App_banner-menu">
+                <div class="w-1/2 md:w-auto py-2 md:py-0">
+                    <a href="#">
+                        <img class="mx-auto rounded-full hover:shadow-lg transition duration-300 ease-in-out ls-is-cached" alt="" src="https://cdn.eduadvisor.my/general/2022/11/ea-home-icons-v06-apply-uni.webp" width="301px" height="300px" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-home-icons-v06-apply-uni.webp">
+                        <p class="mt-2 font-semibold">Search for a course</p>
+                    </a>
+                </div>
+                <div class="w-1/2 md:w-auto py-2 md:py-0">
+                    <a href="#">
+                    <img class="mx-auto rounded-full hover:shadow-lg transition duration-300 ease-in-out ls-is-cached lazyloaded" alt="" src="https://cdn.eduadvisor.my/general/2022/11/ea-home-icons-v06-search-course.webp" width="301px" height="300px" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-home-icons-v06-search-course.webp">
+                    <p class="mt-2 font-semibold">Take a career quiz</p>
+                    </a>
+                </div>
+                <div class="w-1/2 md:w-auto py-2 md:py-0">
+                    <a href="#">
+                    <img class="mx-auto rounded-full hover:shadow-lg transition duration-300 ease-in-out ls-is-cached lazyloaded" alt="" src="https://cdn.eduadvisor.my/general/2022/11/ea-home-icons-v06-speak-advisor.webp" width="301px" height="300px" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-home-icons-v06-speak-advisor.webp">
+                    <p class="mt-2 font-semibold">Apply for a university</p>
+                    </a>
+                </div>
+                <div class="w-1/2 md:w-auto py-2 md:py-0">
+                    <a href="#">
+                    <img class="mx-auto rounded-full hover:shadow-lg transition duration-300 ease-in-out ls-is-cached lazyloaded" alt="" src="https://cdn.eduadvisor.my/general/2023/03/ea-home-icons-serach-scholarships.webp" width="301px" height="300px" data-src="https://cdn.eduadvisor.my/general/2023/03/ea-home-icons-serach-scholarships.webp">
+                    <p class="mt-2 font-semibold">Search scholarships</p>
+                    </a>
+                </div>
+            </div>
+            <div class="App_banner-bg" style="background-image: url(https://cdn.eduadvisor.my/general/2022/11/homepage-header-20221028-02.webp)"></div>
+        </div>
+        <div style="background-color: #ffffff; background-size: cover;">
+            <div class="App_unis container mx-auto py-12 md:py-16">
+                <div class="App_unis-content text-center">
+                    <p class="App_unis-text text-gray-500 text-lg md:text-2xl mt-2">Apply for over 100+ universities in Malaysia and abroad.</p>
+                    <div class="App_unis-list grid grid-cols-3 md:grid-cols-9 gap-4 content-center mt-10">
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-unm.webp" width="409px" height="271px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-unm.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-taylors.webp" width="409px" height="271px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-taylors.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-apu.webp" width="409px" height="271px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-apu.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-imu.webp" width="409px" height="271px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-imu.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-monash.webp" width="409px" height="271px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-monash.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institution-tar-umt.webp" width="409px" height="272px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institution-tar-umt.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-unikl.webp" width="409px" height="272px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-unikl.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institution-uniten.webp" width="409px" height="272px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institution-uniten.webp">
+                        </div>
+                        <div>
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-mmu.webp" width="409px" height="272px" data-src="https://cdn.eduadvisor.my/general/2022/11/homepage-institutions-c-mmu.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #fff; background-size: cover;">
+            <div class="App_highlights container mx-auto py-12 md:py-16">
+                <div class="App_highlights-content text-center">
+                    <h2 class="text-2xl md:text-3xl font-semibold">Key Highlights</h2>
+                    <div class="App_slider mt-10">
+                        <div class="App_stage-outer owl-height" style="height: 437.013px;">
+                            <div class="App_stage" style="transform: translate3d(-1157px, 0px, 0px); transition: all 2s ease 0s;">
+                                <div class="App_stageItem cloned">
+                                    <div class="relative h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-open-days-event02.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-open-days-event02.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">Explore Open Days and Events</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem cloned">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights_vef.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights_vef.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">EduAdvisor Virtual Education Fair: 2024 Edition</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem cloned">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-cs-eng-fair.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-cs-eng-fair.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">EduAdvisor Computer Science &amp; Engineering Virtual Fair</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem active">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2023/06/homepage-highlights-eduadvisor-scholarship-genie.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2023/06/homepage-highlights-eduadvisor-scholarship-genie.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class="text-xl font-semibold">Upload Your SPM / IGCSE Results and Get Instant Scholarships</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem active">
+                                    <div class="relative h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-open-days-event02.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-open-days-event02.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">Explore Open Days and Events</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem active">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights_vef.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights_vef.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">EduAdvisor Virtual Education Fair: 2024 Edition</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem active">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-cs-eng-fair.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-cs-eng-fair.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">EduAdvisor Computer Science &amp; Engineering Virtual Fair</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem cloned">
+                                    <div class="relative h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-open-days-event02.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-open-days-event02.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">Explore Open Days and Events</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem cloned">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights_vef.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights_vef.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">EduAdvisor Virtual Education Fair: 2024 Edition</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="App_stageItem cloned">
+                                    <div class="relative key-highlight-item h-full">
+                                        <div style="background-color: #F2F4F7" class="item h-full rounded-xl text-center overflow-hidden relative">
+                                            <img class="owl-lazy mx-auto w-full h-auto" alt="" src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-cs-eng-fair.webp" width="730px" height="400px" data-src="https://cdn.eduadvisor.my/general/2024/01/homepage-highlights-cs-eng-fair.webp" style="opacity: 1;">
+                                            <div class="px-3 pt-8 pb-10">
+                                                <div class="content-box" style="min-height: 112px;">
+                                                    <p class=" text-xl font-semibold">EduAdvisor Computer Science &amp; Engineering Virtual Fair</p>
+                                                    <p class=" my-4"></p>
+                                                </div>
+                                                <a href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="App_nav">
+                            <button type="button" role="presentation" class="App_navPrev justify-center items-center">
+                                <span class="text-2xl"><i class="fa-solid fa-chevron-left"></i></span>
+                            </button>
+                            <button type="button" role="presentation" class="App_navNext justify-center items-center">
+                                <span class="text-2xl"><i class="fa-solid fa-chevron-right"></i></span>
+                            </button>
+                        </div>
+                        <div class="App_dots">
+                            <button role="button" class="App_dot active"><span></span></button>
+                            <button role="button" class="App_dot"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style=" background-color: rgba(255, 238, 246, 0.75); background-size: cover;  ">
+            <div class="App_help container mx-auto py-12 md:py-16">
+                <div class="App_help-content">
+                    <div class="App_help-header text-center">
+                        <h2 class="text-2xl md:text-3xl font-semibold">How can we help</h2>
+                        <p class="text-gray-500 text-lg md:text-2xl mt-2">Get expert advice on what to study, where to study and how to apply</p>
+                    </div>
+                    <div class="App_help-card w-full md:flex mt-20">
+                        <div class="App_help-text w-full md:w-1/2 md:mr-5">
+                            <h3 class="text-xl md:text-2xl font-semibold">Decide what to study?</h3>
+                            <p class="text-base my-5">Find out if you're on the right track when you speak to our education advisors. You'll get all the information you need to make the best decision to take charge of your future.</p>
+                            <a href="#" class="font-semibold  no-underline capitalize transition duration-300 ease-in-out text-center md:w-auto w-full">
+                                Speak to an advisor
+                            </a>
+                        </div>
+                        <div class="App_help-img w-full my-8 md:w-1/2 md:my-0 md:ml-5">
+                            <div class="hidden md:block">
+                                <img class="mx-auto w-full" alt="what-to-study" src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-01.webp" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-01.webp">
+                            </div>
+                            <div class="block md:hidden">
+                                <img class="mx-auto w-full" alt="what-to-study" src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-01.webp" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-01.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="App_help-card w-full md:flex mt-20">
+                        <div class="App_help-text w-full md:w-1/2 md:ml-5">
+                            <h3 class="text-xl md:text-2xl font-semibold">Looking for scholarships?</h3>
+                            <p class="text-base my-5">Submit your results and get a list of personalised scholarship offers based on your results and personal circumstances.</p>
+                            <a href="#" class="font-semibold  no-underline capitalize transition duration-300 ease-in-out text-center md:w-auto w-full">
+                                Search Scholarships
+                            </a>
+                        </div>
+                        <div class="App_help-img w-full my-8 md:w-1/2 md:my-0 md:mr-5 md:order-first">                            
+                            <div class="hidden md:block">
+                                <img class="mx-auto w-full" alt="looking-for-scholarships" src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-02.webp" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-02.webp">
+                            </div>
+                            <div class="block md:hidden">
+                                <img class="mx-auto w-full" alt="looking-for-scholarships" src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-02.webp" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-02.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="App_help-card w-full md:flex mt-20">
+                        <div class="App_help-text w-full md:w-1/2 md:mr-5">
+                            <h3 class="text-xl md:text-2xl font-semibold">Applying for university?</h3>
+                            <p class="text-base my-5">Experience seamless and hassle-free application to university. Simply tell us what you want and we'll do the rest for you.</p>
+                            <a href="#" class="font-semibold  no-underline capitalize transition duration-300 ease-in-out text-center md:w-auto w-full">
+                                Start Your Application
+                            </a>
+                        </div>
+                        <div class="App_help-img w-full my-8 md:w-1/2 md:my-0 md:ml-5">
+                            <div class="hidden md:block">
+                                <img class="mx-auto w-full" alt="hassle-free-application" src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-03-02.webp" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-03-02.webp">
+                            </div>
+                            <div class="block md:hidden">
+                                <img class="mx-auto w-full" alt="hassle-free-application" src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-03-02.webp" data-src="https://cdn.eduadvisor.my/general/2022/11/ea-homepage-how-can-we-help-v-03-02.webp">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #fff; background-size: cover;">
+            <div class="App_benefits container mx-auto py-12 md:py-16">
+                <div class="App_benefits-text text-center">
+                    <h3 class="text-2xl md:text-3xl font-semibold">Here's why you should apply for university with us</h3>
+                </div>
+                <div class="App_benefits-content hidden md:block">
+                    <div class="App_benefits-list grid grid-cols-3 gap-6 mt-10 text-center">
+                        <div class="App_benefits-item">
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-free.webp" width="151px" height="151px" data-src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-free.webp">
+                            <p class="font-semibold text-lg mt-2">Free Services</p>
+                            <p class="text-base mt-1"></p>
+                            <p>Course info, counselling, scholarship search and application service — it's all free!</p>
+                            <p></p>
+                        </div>
+                        <div class="App_benefits-item">
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-priority-treatment.webp" width="151px" height="151px" data-src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-priority-treatment.webp">
+                            <p class="font-semibold text-lg mt-2">Priority Treatment</p>
+                            <p class="text-base mt-1"></p>
+                            <p>We work directly with university admissions team to ensure your application is a priority.</p>
+                            <p></p>
+                        </div>
+                        <div class="App_benefits-item">
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-trusted-advice.webp" width="151px" height="151px" data-src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-trusted-advice.webp">
+                            <p class="font-semibold text-lg mt-2">Trusted Advice</p>
+                            <p class="text-base mt-1"></p>
+                            <p>We have your best interests at heart. Get all the info to make the best decision possible.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="App_benefits-content block md:hidden">
+                    <div class="App_benefits-list grid grid-cols-1 gap-6 mt-10 text-center">
+                        <div class="App_benefits-item">
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-free.webp" width="151px" height="151px" data-src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-free.webp">
+                            <p class="font-semibold text-lg mt-2">Free Services</p>
+                            <p class="text-base mt-1"></p>
+                            <p>Course info, counselling, scholarship search and application service — it's all free!</p>
+                            <p></p>
+                        </div>
+                        <div class="App_benefits-item">
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-priority-treatment.webp" width="151px" height="151px" data-src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-priority-treatment.webp">
+                            <p class="font-semibold text-lg mt-2">Priority Treatment</p>
+                            <p class="text-base mt-1"></p>
+                            <p>We work directly with university admissions team to ensure your application is a priority.</p>
+                            <p></p>
+                        </div>
+                        <div class="App_benefits-item">
+                            <img class="mx-auto" alt="" src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-trusted-advice.webp" width="151px" height="151px" data-src="https://cdn.eduadvisor.my/general/2022/11/icon-home-why-trusted-advice.webp">
+                            <p class="font-semibold text-lg mt-2">Trusted Advice</p>
+                            <p class="text-base mt-1"></p>
+                            <p>We have your best interests at heart. Get all the info to make the best decision possible.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #F9FAFB; background-size: cover;">
+            <div class="App_blogs container mx-auto py-12 md:py-16">
+                <div class="App_blogs-articles text-center">
+                    <h2 class="text-2xl md:text-3xl font-semibold">Explore our latest blog articles</h2>
+                    <p class="text-gray-500 text-lg md:text-2xl mt-2">Equip yourself with course information, study tips and more.</p>
+                    <div class="App_blogs-lastedArticles text-left mt-10">
+                        <div class="App_blogs-content md:flex md:space-x-10">
+                            <div class="md:w-3/6">
+                                <div class="lg-item mb-10">
+                                    <a href="https://eduadvisor.my/articles/benefits-studying-diploma">
+                                        <img src="https://cdn.eduadvisor.my/articles/2023/07/tc-benefits-of-studying-diploma-02-feature.webp" alt="7 Benefits of Studying a Diploma" class="w-full" data-src="https://cdn.eduadvisor.my/articles/2023/07/tc-benefits-of-studying-diploma-02-feature.webp">
+                                    </a>
+                                    <p class="cat uppercase my-3 font-normal text-gray-500 text-xs"><a href="https://eduadvisor.my/articles/diploma">Diploma</a></p>
+                                    <a href="https://eduadvisor.my/articles/benefits-studying-diploma">
+                                        <p class="blog-title font-bold text-sm">7 Benefits of Studying a Diploma</p>
+                                        <p>In a sea of options, a diploma may not jump out as an immediate choice. But it’s actually one of the fastest and most cost-effective options.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="md:w-3/6 grid grid-cols-1 md:grid-cols-2 gap-10">
+                                <div class="sm-item">
+                                    <a href="https://eduadvisor.my/articles/whats-next-diploma-nursing-chart-career-imc-virtual-session-jan-2024">
+                                        <img src="https://cdn.eduadvisor.my/articles/2024/01/imc-career-pathway-nursing-jan2024-feature.webp" alt="What’s Next After Diploma in Nursing? Chart Your Career With IMC’s Virtual Session This 30 Jan 2024" class="w-full" data-src="https://cdn.eduadvisor.my/articles/2024/01/imc-career-pathway-nursing-jan2024-feature.webp">
+                                    </a>
+                                    <p class="cat uppercase my-3 font-normal text-gray-500 text-xs"><a href="https://eduadvisor.my/articles/news-and-events">News and Events</a></p>
+                                    <a href="https://eduadvisor.my/articles/whats-next-diploma-nursing-chart-career-imc-virtual-session-jan-2024">
+                                        <p class="blog-title font-bold text-sm">What’s Next After Diploma in Nursing? Chart Your Career With IMC’s Virtual Session This 30 Jan 2024</p>
+                                    </a>
+                                </div>
+                                <div class="sm-item">
+                                    <a href="https://eduadvisor.my/articles/monash-info-day-27-january-2024">
+                                        <img src="https://cdn.eduadvisor.my/articles/2024/01/monash-info-day-jan2024.webp" alt="Join Monash Info Day at Hilton Kuala Lumpur This 27 January 2024" class="w-full" data-src="https://cdn.eduadvisor.my/articles/2024/01/monash-info-day-jan2024.webp">
+                                    </a>
+                                    <p class="cat uppercase my-3 font-normal text-gray-500 text-xs"><a href="https://eduadvisor.my/articles/news-and-events">News and Events</a></p>
+                                    <a href="https://eduadvisor.my/articles/monash-info-day-27-january-2024">
+                                        <p class="blog-title font-bold text-sm">Join Monash Info Day at Hilton Kuala Lumpur This 27 January 2024</p>
+                                    </a>
+                                </div>
+                                <div class="sm-item">
+                                    <a href="https://eduadvisor.my/articles/southampton-malaysia-uosm-open-day-jan-2024">
+                                        <img src="https://cdn.eduadvisor.my/articles/2024/01/uosm-open-day-jan2024.webp" alt="Get RM2,000 Rebate at Southampton Malaysia’s Open Day This 27 – 28 January 2024" class="w-full" data-src="https://cdn.eduadvisor.my/articles/2024/01/uosm-open-day-jan2024.webp">
+                                    </a>
+                                        <p class="cat uppercase my-3 font-normal text-gray-500 text-xs"><a href="https://eduadvisor.my/articles/news-and-events">News and Events</a></p>
+                                    <a href="https://eduadvisor.my/articles/southampton-malaysia-uosm-open-day-jan-2024">
+                                        <p class="blog-title font-bold text-sm">Get RM2,000 Rebate at Southampton Malaysia’s Open Day This 27 – 28 January 2024</p>
+                                    </a>
+                                </div>
+                                <div class="sm-item">
+                                    <a href="https://eduadvisor.my/articles/fcuc-open-day-jan-2024">
+                                        <img src="https://cdn.eduadvisor.my/articles/2024/01/fcuc-open-day-january-2024_1.webp" alt="Get up to 100% Tuition Fee Waiver With Your UEC Results at First City Open Day This January 2024" class="w-full" data-src="https://cdn.eduadvisor.my/articles/2024/01/fcuc-open-day-january-2024_1.webp">
+                                    </a>
+                                    <p class="cat uppercase my-3 font-normal text-gray-500 text-xs"><a href="https://eduadvisor.my/articles/news-and-events">News and Events</a></p>
+                                    <a href="https://eduadvisor.my/articles/fcuc-open-day-jan-2024">
+                                        <p class="blog-title font-bold text-sm">Get up to 100% Tuition Fee Waiver With Your UEC Results at First City Open Day This January 2024</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://eduadvisor.my/articles" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center mt-8 md:mt-12"><span>View more articles</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="py-12 md:py-16 mx-auto text-center" style="background-color: #fff">
+            <h2 class="text-2xl md:text-3xl font-semibold">Students and parents love us</h2>
+            <p class="text-lg md:text-2xl mt-2 text-gray-500">Over 6 million students have used EduAdvisor to apply for university. </p>
+            <div class="App_slider google_reviews my-2 md:my-10 text-center">
+                <div class="App_stage-outer owl-height" style="height: 328px;">
+                    <div class="App_stage">
+                        <div class="App_stageItem" style="width: 364.8px; margin-right: 20px;">
+                            <div class="py-8 flex flex-1 h-full google-reviews">
+                                <div style="background-color: #EAECF5" class="shadow-lg py-8 px-4 relative flex flex-col items-stretch w-full">
+                                    <div class="flex">
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-10 h-10 2xl:w-14 2xl:h-14">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-10 h-10 2xl:w-14 2xl:h-14 ls-is-cached lazyloaded" alt="" src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" data-src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-left">
+                                            <p class="font-semibold author_name">Yash Fernandez</p>
+                                            <div class="my-1 flex items-center">
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            </div>
+                                            <p class="text-sm text-gray-600">2 months ago</p>
+                                        </div>
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-8 h-8 2xl:w-12 2xl:h-12">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-8 h-8 2xl:w-12 2xl:h-12 ls-is-cached lazyloaded" alt="" src="https://eduadvisor.my/assets/images/google_logo.png" data-src="https://eduadvisor.my/assets/images/google_logo.png" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="google-review-description">
+                                        <p class="my-5 text-base comment">EduAdvisor have taken a great initiative to help people who are not sure about what should be their education pathway and make them choose the right course! The members are very kind as well so don't hesitate to reach them out to ask whatever question you may have to get a clear picture of what you should pursue for your higher education. </p>
+                                    </div>
+                                    <div class="google-review-bottom py-8">
+                                        <a target="blank" href="https://www.google.com/maps/contrib/111569371165456592662/place/ChIJg58Mgl5JzDERwnRApcp9vHg">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="App_stageItem" style="width: 364.8px; margin-right: 20px;">
+                            <div class="py-8 flex flex-1 h-full google-reviews">
+                                <div style="background-color: #EAECF5" class="shadow-lg relative py-8 px-4 flex flex-col items-stretch w-full">
+                                    <div class="flex">
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-10 h-10 2xl:w-14 2xl:h-14">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-10 h-10 2xl:w-14 2xl:h-14 ls-is-cached lazyloaded" alt="" src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" data-src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-left">
+                                            <p class="font-semibold author_name">Yash Fernandez</p>
+                                            <div class="my-1 flex items-center">
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            </div>
+                                            <p class="text-sm text-gray-600">2 months ago</p>
+                                        </div>
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-8 h-8 2xl:w-12 2xl:h-12">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-8 h-8 2xl:w-12 2xl:h-12 ls-is-cached lazyloaded" alt="" src="https://eduadvisor.my/assets/images/google_logo.png" data-src="https://eduadvisor.my/assets/images/google_logo.png" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="google-review-description">
+                                        <p class="my-5 text-base comment">EduAdvisor have taken a great initiative to help people who are not sure about what should be their education pathway and make them choose the right course! The members are very kind as well so don't hesitate to reach them out to ask whatever question you may have to get a clear picture of what you should pursue for your higher education. </p>
+                                    </div>
+                                    <div class="google-review-bottom py-8">
+                                        <a target="blank" href="https://www.google.com/maps/contrib/111569371165456592662/place/ChIJg58Mgl5JzDERwnRApcp9vHg">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="App_stageItem" style="width: 364.8px; margin-right: 20px;">
+                            <div class="py-8 flex flex-1 h-full google-reviews">
+                                <div style="background-color: #EAECF5" class="shadow-lg relative py-8 px-4 flex flex-col items-stretch w-full">
+                                    <div class="flex">
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-10 h-10 2xl:w-14 2xl:h-14">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-10 h-10 2xl:w-14 2xl:h-14 ls-is-cached lazyloaded" alt="" src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" data-src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-left">
+                                            <p class="font-semibold author_name">Yash Fernandez</p>
+                                            <div class="my-1 flex items-center">
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            </div>
+                                            <p class="text-sm text-gray-600">2 months ago</p>
+                                        </div>
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-8 h-8 2xl:w-12 2xl:h-12">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-8 h-8 2xl:w-12 2xl:h-12 ls-is-cached lazyloaded" alt="" src="https://eduadvisor.my/assets/images/google_logo.png" data-src="https://eduadvisor.my/assets/images/google_logo.png" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="google-review-description">
+                                        <p class="my-5 text-base comment">EduAdvisor have taken a great initiative to help people who are not sure about what should be their education pathway and make them choose the right course! The members are very kind as well so don't hesitate to reach them out to ask whatever question you may have to get a clear picture of what you should pursue for your higher education. </p>
+                                    </div>
+                                    <div class="google-review-bottom py-8">
+                                        <a target="blank" href="https://www.google.com/maps/contrib/111569371165456592662/place/ChIJg58Mgl5JzDERwnRApcp9vHg">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="App_stageItem" style="width: 364.8px; margin-right: 20px;">
+                            <div class="py-8 flex flex-1 h-full google-reviews">
+                                <div style="background-color: #EAECF5" class="shadow-lg relative py-8 px-4 flex flex-col items-stretch w-full">
+                                    <div class="flex">
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-10 h-10 2xl:w-14 2xl:h-14">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-10 h-10 2xl:w-14 2xl:h-14 ls-is-cached lazyloaded" alt="" src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" data-src="https://lh3.googleusercontent.com/a-/ACNPEu_4oTJkYWyN7tWYLyOS81fvjFx1okdhtoz5ue0h=s120-c-c0x00000000-cc-rp-mo-br100" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                        <div class="w-3/5 text-left">
+                                            <p class="font-semibold author_name">Yash Fernandez</p>
+                                            <div class="my-1 flex items-center">
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                                <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>First star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                            </div>
+                                            <p class="text-sm text-gray-600">2 months ago</p>
+                                        </div>
+                                        <div class="w-1/5 flex justify-center justify-items-center">
+                                            <div class="w-8 h-8 2xl:w-12 2xl:h-12">
+                                                <img class="owl-lazy rounded-full border border-gray-100 shadow-sm w-8 h-8 2xl:w-12 2xl:h-12 ls-is-cached lazyloaded" alt="" src="https://eduadvisor.my/assets/images/google_logo.png" data-src="https://eduadvisor.my/assets/images/google_logo.png" style="opacity: 1;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="google-review-description">
+                                        <p class="my-5 text-base comment">EduAdvisor have taken a great initiative to help people who are not sure about what should be their education pathway and make them choose the right course! The members are very kind as well so don't hesitate to reach them out to ask whatever question you may have to get a clear picture of what you should pursue for your higher education. </p>
+                                    </div>
+                                    <div class="google-review-bottom py-8">
+                                        <a target="blank" href="https://www.google.com/maps/contrib/111569371165456592662/place/ChIJg58Mgl5JzDERwnRApcp9vHg">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="App_nav">
+                    <button type="button" role="presentation" class="App_navPrev justify-center items-center">
+                        <span class="text-2xl"><i class="fa-solid fa-chevron-left"></i></span>
+                    </button>
+                    <button type="button" role="presentation" class="App_navNext justify-center items-center">
+                        <span class="text-2xl"><i class="fa-solid fa-chevron-right"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="image_background">
+            <div class="container mx-auto py-12 md:py-16">
+                <div class="end_block py-14">
+                    <div class="w-full md:flex">
+                        <div class="w-full text-center">
+                            <h2 class="text-4xl md:text-5xl font-semibold title">Your university journey starts here</h2>
+                            <p class="text-xl my-5"></p>
+                            <a style="color: #ffffff; background: #A11043" href="#" class=" btn-common no-underline capitalize transition duration-300 ease-in-out text-center md:w-auto w-full btn-end-block">
+                                Start Planning
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div style="background-color: #f6f6f6">
+            <div class="container py-12 md:py-16 mx-auto">
+                <div class="flex justify-between flex-col md:flex-row space-y-5 md:space-y-0">
+                    <div>
+                        <h2 class="text-lg">Join our newsletter</h2>
+                        <p class=" text-gray-500 mt-1">Stay up to date with our latest articles.</p>
+                    </div>
+                    <div class="form-wrapper form-subcribe" id="form_subcribe">
+                        <form class="form" method="POST" action=""> 
+                            <div class="flex justify-between space-x-4 content-center items-center">
+                                <div style="width: 241.6px;">
+                                    <input type="text" name="valid_check" class="valid-check">
+                                    <input type="email" name="email" required="" class="mt-1 px-3 py-2 block w-full rounded-md border-gray-300 shadow-sm transition focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-80" placeholder="Enter your email">
+                                </div>
+                                <div>
+                                    <button type="submit" id="btn_subscribe_submit" class=" btn-common capitalize transition duration-300 ease-in-out text-center" style="margin-top: 0.2rem;">
+                                    Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-10">
+                <div class="flex flex-col md:flex-row space-y-5 md:space-y-0">
+                    <div class="flex-1">
+                        <a href="https://eduadvisor.my" class="App_nav-logo">
+                            <img src="https://cdn.eduadvisor.my/general/logo/2022-11-01/eduadvisor-logo-main-1667289740.webp" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex-1 flex justify-between" style="color: #667085;">
+                        <div>
+                            <h2 class="font-semibold" style="color: #98A2B3;">Browse</h2>
+                            <div class="flex flex-col space-y-2 mt-3">
+                                <a href="#">Courses</a>
+                                <a href="#">Universities</a>
+                                <a href="#">Scholarships</a>
+                                <a href="#">Quizzes</a>
+                                <a href="#">Course Guides</a>
+                                <a href="#">Highlights</a>
+                                <a href="#">Articles</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold" style="color: #98A2B3;">Social</h2>
+                            <div class="flex flex-col space-y-2 mt-3">
+                                <a href="https://instagram.com/eduadvisor" target="_blank">Instagram</a>
+                                <a href="https://www.tiktok.com/@eduadvisormy" target="_blank">TikTok</a>
+                                <a href="https://twitter.com/eduadvisormy" target="_blank">Twitter</a>
+                                <a href="https://facebook.com/eduadvisor.my" target="_blank">Facebook</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold" style="color: #98A2B3;">Company</h2>
+                            <div class="flex flex-col space-y-2 mt-3">
+                                <a href="#">About Us</a>
+                                <a href="#">Our Services</a>
+                                <a href="#">FAQs</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">Disclaimer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: white">
+            <div class="container py-12 md:py-16 mx-auto">
+                <div class="flex justify-between content-center items-center flex-col md:flex-row space-y-5 md:space-y-0">
+                    <div>
+                        <p class=" text-gray-500">Distinctive Education Advisor Sdn Bhd (1122555-V) | © 2024 EduAdvisor. All rights reserved.</p>
+                    </div>
+                    <div class="flex text-3xl text-gray-500 space-x-3">
+                        <a class="block" href="https://instagram.com/eduadvisor" target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                        <a class="block" href="https://www.tiktok.com/@eduadvisormy" target="_blank"><span><i class="fa-brands fa-tiktok"></i></span></a>
+                        <a class="block" href="https://twitter.com/eduadvisormy" target="_blank"><span><i class="fa-brands fa-twitter"></i></span></a>
+                        <a class="block" href="https://facebook.com/eduadvisor.my" target="_blank"><span><i class="fa-brands fa-facebook"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
